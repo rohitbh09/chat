@@ -12,6 +12,7 @@
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
     </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -32,23 +33,17 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <p>This is Column 1</p>
+  <div class="row">
+    <div class="col-md-8">
+      <p>This is Column 1</p>
+    </div>
+    <div class="col-md-4">
+      <p>
+        This is Column 2
+      </p>
+    </div>
   </div>
-  <div class="col-md-4">
-    <p>
-      This is Column 2
-    </p>
-  </div>
-  <div class="col-md-4">
-    <p>
-      This is Column 3
-    </p>
-  </div>
-</div>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
       var socket = io();
